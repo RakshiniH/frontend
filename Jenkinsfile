@@ -34,7 +34,7 @@ pipeline {
                     sh '''
                       aws s3 sync build/ s3://$S3_BUCKET --delete
                       aws cloudfront create-invalidation \
-                        --distribution-id $CLOUDFRONT_DISTRIBUTION_ID \
+                        --distribution-id E1ETXJ3RKSJW87 \
                         --paths "/*"
                     '''
                 }
