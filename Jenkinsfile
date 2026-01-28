@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
         S3_BUCKET = 'projects313'
-        CLOUDFRONT_DISTRIBUTION_ID = 'E1ETXJ3RKSJW87'
+        CLOUDFRONT_DISTRIBUTION_ID = 'EIYQEN0TPXUM3'
     }
 
     stages {
@@ -34,7 +34,7 @@ pipeline {
                     sh '''
                       aws s3 sync build/ s3://$S3_BUCKET --delete
                       aws cloudfront create-invalidation \
-                        --distribution-id E1ETXJ3RKSJW87 \
+                        --distribution-id EIYQEN0TPXUM3 \
                         --paths "/*"
                     '''
                 }
