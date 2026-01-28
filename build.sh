@@ -19,4 +19,3 @@ echo "===================================="
 echo " Build completed successfully"
 echo " Output directory: build/"
 echo "===================================="
-mme-wdjo-ydz
